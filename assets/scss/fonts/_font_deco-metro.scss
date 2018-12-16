@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Deco Metro';
+  font-weight: normal;
+  font-style: normal;
+
+  src: local('Deco Metro'), local('DecoMetro'),
+  url('../fonts/hinted-DecoMetro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/hinted-DecoMetro.woff2') format('woff2'),
+  url('../fonts/hinted-DecoMetro.woff') format('woff'),
+  url('../fonts/hinted-DecoMetro.ttf') format('truetype'),
+  url('../fonts/hinted-DecoMetro.svg#DecoMetro') format('svg');
+  src: url('../fonts/hinted-DecoMetro.eot');
+}

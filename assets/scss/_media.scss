@@ -1,0 +1,118 @@
+// col-xl-# ( ≥1200px)
+@include media-breakpoint-down(xl) {
+}
+// col-lg-# ( ≥992px)
+@include media-breakpoint-down(lg) {
+  .headnav a {
+    font-size: 1em;
+  }
+  .first-block .first-block--title {
+    padding-top: 10%;
+    &:before,
+    &:after {
+      position: relative;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+
+      display: block;
+
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .second-block:after {
+    top: 60%;
+  }
+  .third-block .third-block-content--item.third-block-content--item-1,
+  .third-block .third-block-content--item.third-block-content--item-2,
+  .third-block .third-block-content--item.third-block-content--item-3,
+  .third-block .third-block-content--item.third-block-content--item-4 {
+    margin-bottom: 70px;
+  }
+  .second-block:after {
+    background-image: none;
+  }
+  .second-block .second-block--item {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+  .second-block .second-block--order {
+    margin-bottom: 20px;
+  }
+  .seven-block .seven-block--video-title {
+    text-align: center;
+  }
+}
+// col-md-# ( ≥768px)
+@include media-breakpoint-down(md) {
+  .six-block .six-block--title {
+    margin-bottom: 570px;
+  }
+  .six-block .six-block--about {
+    text-align: center;
+  }
+  .six-block .six-block--about h5,
+  .six-block .six-block--about p {
+    color: #fff;
+  }
+  .six-block .six-block--full.six-block--full_opened {
+    width: 100%;
+    right: 100%;
+  }
+  .six-block .six-block--full h5,
+  .six-block .six-block--full h4,
+  .six-block .six-block--full p {
+  padding-left: 20%;
+  padding-right: 20%;
+  }
+  .six-block .six-block--full p {
+    text-align: center;
+    line-height: 1.8;
+  }
+}
+// col-sm-# ( ≥576px)
+@include media-breakpoint-down(sm) {
+  .header--nav {
+    position: absolute;
+    z-index: 5;
+    top: -80px;
+    right: 50px;
+
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    border-top: 10px solid $orange;
+    border-bottom: 10px solid $orange;
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 0;
+
+      display: block;
+
+      height: 10px;
+      margin-top: -5px;
+
+      content: '';
+
+      background-color: $orange;
+    }
+
+    & > * {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(xs) {
+}
